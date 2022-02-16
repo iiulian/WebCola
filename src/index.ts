@@ -1,5 +1,4 @@
 export * from './adaptor'
-export * from './d3adaptor'
 export * from './descent'
 export * from './geom'
 export * from './gridrouter'
@@ -14,3 +13,4 @@ export * from './rectangle'
 export * from './shortestpaths'
 export * from './vpsc'
 export * from './batch'
+export * from './ILayout';

@@ -5,6 +5,8 @@ import {Rectangle, Projection, makeEdgeTo, makeEdgeBetween} from './rectangle'
 import {Calculator} from './shortestpaths'
 import {TangentVisibilityGraph, TVGPoint} from './geom'
 import {separateGraphs, applyPacking} from './handledisconnected'
+import { ILayout } from './ILayout';
+
     /**
      * The layout process fires three events:
      *  - start: layout iterations started
@@ -84,7 +86,7 @@ import {separateGraphs, applyPacking} from './handledisconnected'
      * Main interface to cola layout.
      * @class Layout
      */
-    export class Layout {
+    export class Layout implements ILayout {
         private _canvasSize = [1, 1];
         private _linkDistance: number | LinkNumericPropertyAccessor = 20;
         private _defaultNodeSize: number = 10;
